@@ -1,4 +1,22 @@
 {
+  "CF103176852": {
+    "contest_id": 218,
+    "language": "GNU C++17",
+    "path": "codeforces/218/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Mountain Scenery",
+    "problem_url": "https://codeforces.com/contest/218/problem/A",
+    "submission_id": "CF103176852",
+    "submission_url": "https://codeforces.com/contest/218/submission/103176852",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Jan/04/2021 15:39"
+  },
   "CF103330787": {
     "contest_id": 143,
     "language": "GNU C++17",
