@@ -1,4 +1,21 @@
 {
+  "CF103488941": {
+    "contest_id": 514,
+    "language": "GNU C++17",
+    "path": "codeforces/514/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Chewba\u0441ca and Number",
+    "problem_url": "https://codeforces.com/contest/514/problem/A",
+    "submission_id": "CF103488941",
+    "submission_url": "https://codeforces.com/contest/514/submission/103488941",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Jan/06/2021 01:57"
+  },
   "CF103995659": {
     "contest_id": 382,
     "language": "GNU C++17",
