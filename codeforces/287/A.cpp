@@ -74,21 +74,48 @@ bool isItOk(string sq[4]) {
 	vi vec2;
 
 	FOR(j,0,3) {
-		FOR(k,0,3) {		
-			FOR(i,j,j+2) {
-				if(sq[i][k] == '#')
-					vec.pb(1);
-				else
-					vec2.pb(1);
-				if(sq[i][k+1] == '#')
-					vec.pb(1);
-				else
-					vec2.pb(1);	
-			}
-			if (vec.size()>2||vec2.size()>2) return true;
-			vec.clear();
-			vec2.clear();
+		FOR(i,j,j+2) {
+			if(sq[i][0] == '#')
+				vec.pb(1);
+			else
+				vec2.pb(1);
+			if(sq[i][1] == '#')
+				vec.pb(1);
+			else
+				vec2.pb(1);	
 		}
+		if (vec.size()>2||vec2.size()>2) return true;
+		vec.clear();
+		vec2.clear();
+		FOR(i,j,j+2) {
+			if(sq[i][1] == '#')
+				vec.pb(1);
+			else
+				vec2.pb(1);
+			if(sq[i][2] == '#')
+				vec.pb(1);
+			else
+				vec2.pb(1);	
+		}
+		if (vec.size()>2||vec2.size()>2) return true;
+		vec.clear();
+		vec2.clear();
+		FOR(i,j,j+2) {
+			if(sq[i][2] == '#')
+				vec.pb(1);
+			else
+				vec2.pb(1);
+			if(sq[i][3] == '#')
+				vec.pb(1);
+			else
+				vec2.pb(1);	
+		}
+		if (vec.size()>2||vec2.size()>2) return true;
+		vec.clear();
+		vec2.clear();
+
+
+
 	}
 	return false;
 }
