@@ -78,7 +78,7 @@ void solve() {
 		while(n--){
 			bool ch=true;
 			tt(n){
-				ch?cout<<"1 ":cout<<"-1 ";
+				ch?cout<<1<<' ':cout<<-1<<' ';
 				ch = !ch;
 			}
 		}
@@ -87,8 +87,8 @@ void solve() {
 		while(n--){
 			bool ch=true;
 			tt(n){
-				if(i==x){cout << "0 "; continue;}
-				ch?cout<<"1 ":cout<<"-1 ";
+				if(i==x){cout << 0<<' '; continue;}
+				ch?cout<<1<<' ':cout<<-1<<' ';
 				ch = !ch;
 			}
 		}
