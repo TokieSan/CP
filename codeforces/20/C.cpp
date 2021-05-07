@@ -27,7 +27,7 @@ typedef priority_queue<int,vector<int>,greater<int> > pqr;
 #define GGG(x,y,z) int x,y,z; cin >> x >> y >> z;
 #define tt2(nx,ny) \
 	for(int i=0; i<nx; i++) \
-		for(int j=0; j<ny; j++)	
+for(int j=0; j<ny; j++)	
 
 #define    PI         3.14159265358979
 #define    AREA(r)    (PI*(r)*(r))
@@ -118,9 +118,9 @@ bool validLimits(int x, int y, int nx, int ny) {
 			x>=nx ||
 			y<0 ||
 			y>=nx 
-		) return false;
+	  ) return false;
 	return true;
-	
+
 }
 
 void checkMyNeighbors(int **a, int i, int j, int N) {
@@ -130,7 +130,7 @@ void checkMyNeighbors(int **a, int i, int j, int N) {
 	if(!validLimits(i,j,N,N)) return;
 	//manipulator
 	// a[i][j]='x';
-	
+
 	//remember to add your shit's limits
 	FOR(k,0,3) {
 		FOR(kk,0,3) {
@@ -139,30 +139,33 @@ void checkMyNeighbors(int **a, int i, int j, int N) {
 	}
 }
 
-typedef pair<int,ll> pil; 
-typedef pair<ll,int> pli;
-V<V<pil>> adj;// <node,weight>
-V<ll> dist;
+
+V<V<pair<int, ll>> > adj;// first is edge second is w 
+vector<ll> dist; 
 vi road;
 
 void dijkstra(int s){
-	priority_queue<pli, V<pli>, greater<pli>> p;
-
 	dist[s]=0;
 	road[s]=s;
 
-	p.push({0,s});
+	priority_queue<pi, V<pair<ll,int>>, greater<pair<ll,int>> > p;
+
+	p.push({0,s}); // first is vertex second is weight
+
 	while(!p.empty()){
 		int u = p.top().S;
 		p.pop();
-		for(auto v : adj[u]){
-			ll w = v.S;
-			if(dist[v.F]>dist[u]+w){
-				dist[v.F]=dist[u]+w;
-				p.push({dist[v.F], v.F});
-				road[v.F]=u;
+
+		for( auto i : adj[u] ){
+			int v = i.F;
+			int w = i.S;
+			if(dist[v]>dist[u]+w){
+				dist[v]=dist[u]+w;
+				p.push({dist[v], v});
+				road[v]=u;
 			}
 		}
+			
 	}
 }
 
@@ -172,31 +175,34 @@ int main(int argc, char *argv[]) {
 	cout.tie(0);	
 	//freopen(".in", "r", stdin);
 	//freopen(".out", "w", stdout);
+	
 	GG(n,m);
-	adj.resize(n); road.resize(n,-1); dist.resize(n,1e16);
+	adj.resize(n);
+	dist.resize(n, 1e16);
+	road.resize(n,-1);
 	tt(m){
 		G(u);
-		pil tmp; cin >> tmp.F >> tmp.S;
-		tmp.F--;
-		u--;
+		pair<int, ll> tmp; cin >> tmp.F >> tmp.S;
+		u--; tmp.F--;
 		adj[u].pb(tmp);
 		adj[tmp.F].pb({u,tmp.S});
 	}
+
 	dijkstra(0);
-	if(road[n-1]==-1){
+
+	vi ans;
+	int V = n-1;
+	if(road[V]==-1){
 		cout << -1;
 		return 0;
 	}
-	vi ans;
-	ans.pb(n-1);
-	int x=n-1;//dest
-	while(x!=0){
-		ans.pb(road[x]);
-		x=road[x];
+	ans.pb(V);
+	while(V!=0){
+		ans.pb(road[V]);
+		V=road[V];
 	}
-	for(auto i=ans.rbegin(); i!=ans.rend(); i++)
-		cout << *i+1 << ' ';
-	
 
+	FOR(i,ans.rbegin(),ans.rend())
+		cout << *i+1<< " ";
 	return 0;
 }
