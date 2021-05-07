@@ -143,6 +143,7 @@ void checkMyNeighbors(int **a, int i, int j, int N) {
 V<V<pair<int, ll>> > adj;// first is edge second is w 
 vector<ll> dist; 
 vi road;
+V<bool> vis;
 
 void dijkstra(int s){
 	dist[s]=0;
@@ -155,15 +156,17 @@ void dijkstra(int s){
 	while(!p.empty()){
 		int u = p.top().S;
 		p.pop();
-
+		if(vis[u])continue;
+		vis[u]=1;
 		for( auto i : adj[u] ){
 			int v = i.F;
 			int w = i.S;
-			if(dist[v]>dist[u]+w){
-				dist[v]=dist[u]+w;
-				p.push({dist[v], v});
-				road[v]=u;
-			}
+			if(!vis[v])
+				if(dist[v]>dist[u]+w){
+					dist[v]=dist[u]+w;
+					p.push({dist[v], v});
+					road[v]=u;
+				}
 		}
 			
 	}
@@ -180,6 +183,7 @@ int main(int argc, char *argv[]) {
 	adj.resize(n);
 	dist.resize(n, 1e16);
 	road.resize(n,-1);
+	vis.resize(n,0);
 	tt(m){
 		G(u);
 		pair<int, ll> tmp; cin >> tmp.F >> tmp.S;
