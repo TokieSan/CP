@@ -5,10 +5,11 @@ Submissions
 ## Introduction
 
 A repository to keep track of problem solving practice, containing solutions from platforms:
-{profile_placeholder}
+* Codeforces &nbsp; [![Codeforces](https://run.kaist.ac.kr/badges/codeforces/lemonissad.svg)](https://codeforces.com/profile/lemonissad)
+
 
 ## Contents
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-{submission_placeholder}
+1 | [E - Shortest Path](https://codeforces.com/contest/59/problem/E) | [GNU C++17](./codeforces/59/E.cpp) | `graphs` `shortest paths` `*2000` | May/08/2021 10:42 | 
