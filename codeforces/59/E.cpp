@@ -154,7 +154,5 @@ int main(int argc, char *argv[]) {
 	cout << ans.size()-1 << '\n';
 	FOR(i,ans.begin(), ans.end())
 		cout << *i +1<< " ";
-
-
 	return 0;
 }
