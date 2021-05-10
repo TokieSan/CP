@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+60 | [D - Permutation Transformation](https://codeforces.com/contest/1490/problem/D) | [GNU C++17](./codeforces/1490/D.cpp) | `dfs and similar` `divide and conquer` `implementation` `*1200` | May/10/2021 09:00 | 
 59 | [E - Shortest Path](https://codeforces.com/contest/59/problem/E) | [GNU C++17](./codeforces/59/E.cpp) | `graphs` `shortest paths` `*2000` | May/08/2021 10:42 | 
 58 | [C - Dijkstra?](https://codeforces.com/contest/20/problem/C) | [GNU C++17](./codeforces/20/C.cpp) | `graphs` `shortest paths` `*1900` | May/07/2021 14:39 | 
 57 | [E - Unsolvable](https://codeforces.com/contest/225/problem/E) | [GNU C++17](./codeforces/225/E.cpp) | `math` `number theory` `*2100` | May/02/2021 09:14 | 
