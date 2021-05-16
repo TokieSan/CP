@@ -140,12 +140,15 @@ void checkMyNeighbors(int **a, int i, int j, int N) {
 }
 int solve(int a, int b){
     int c=a^b;
-    int ans=0;
-    while(c){
-        if(c&1!=0) ans++;
-        c/=2;
+    int bin[20];
+    int d=0;
+    for(int i=0; c>0; i++){    
+        bin[i]=c%2;
+        if(bin[i]==1)
+            d++;
+        c= c/2;  
     }
-    return ans;
+    return d;
 }
  
 int main(int argc, char *argv[]) {
@@ -163,14 +166,14 @@ int main(int argc, char *argv[]) {
     }
     int ans=0;
 
-    FOR(i,0,m-1){
+    FOR(i,0,m){
         int x=solve(a[i],a[m-1]);
         if(x<=k){
             ans++;
         }
     }
     
-    printf("%d", ans);
+    printf("%d", ans-1);
     
 
     return 0;
