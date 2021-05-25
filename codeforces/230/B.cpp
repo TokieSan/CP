@@ -138,14 +138,16 @@ void checkMyNeighbors(int **a, int i, int j, int N) {
         }
     }
 }
+set<ll> primes;
 map<ll,int>M;
 void gen(){
-    int n = 1e6;
+    ll n = 1e6;
     bool vis[n+1];
-    fill(vis,vis+n+1,0);
-    for(ll i=2; i<=n; i++){
+    fill(vis, vis+n+1, 0);
+    for(ll i = 2; i <= n; i++){
         if(!vis[i]){
             M[i*i]++;
+            
             for(ll j = i*i; j<=n; j+=i){
                 vis[j]=1;
             }
