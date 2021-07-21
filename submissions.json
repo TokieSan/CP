@@ -1763,6 +1763,23 @@
     ],
     "timestamp": "Jun/17/2021 13:50"
   },
+  "CF123223612": {
+    "contest_id": 1546,
+    "language": "GNU C++17",
+    "path": "codeforces/1546/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "AquaMoon and Stolen String",
+    "problem_url": "https://codeforces.com/contest/1546/problem/B",
+    "submission_id": "CF123223612",
+    "submission_url": "https://codeforces.com/contest/1546/submission/123223612",
+    "tags": [
+      "interactive",
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Jul/21/2021 22:35"
+  },
   "CF124372701": {
     "contest_id": 1371,
     "language": "GNU C++17",
