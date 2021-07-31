@@ -1763,6 +1763,22 @@
     ],
     "timestamp": "Jun/17/2021 13:50"
   },
+  "CF124374798": {
+    "contest_id": 1468,
+    "language": "GNU C++17",
+    "path": "codeforces/1468/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Four Segments",
+    "problem_url": "https://codeforces.com/contest/1468/problem/E",
+    "submission_id": "CF124374798",
+    "submission_url": "https://codeforces.com/contest/1468/submission/124374798",
+    "tags": [
+      "greedy",
+      "*800"
+    ],
+    "timestamp": "Jul/31/2021 03:04"
+  },
   "CF124375439": {
     "contest_id": 1543,
     "language": "GNU C++17",
