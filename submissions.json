@@ -1763,6 +1763,23 @@
     ],
     "timestamp": "Jun/17/2021 13:50"
   },
+  "CF124644092": {
+    "contest_id": 875,
+    "language": "GNU C++17",
+    "path": "codeforces/875/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Classroom Watch",
+    "problem_url": "https://codeforces.com/contest/875/problem/A",
+    "submission_id": "CF124644092",
+    "submission_url": "https://codeforces.com/contest/875/submission/124644092",
+    "tags": [
+      "brute force",
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Aug/02/2021 07:01"
+  },
   "CF124937408": {
     "contest_id": 453,
     "language": "GNU C++17",
