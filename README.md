@@ -12,11 +12,12 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-103 | [A - Mahmoud and Ehab and the MEX](https://codeforces.com/contest/862/problem/A) | [GNU C++17](./codeforces/862/A.cpp) | `greedy` `implementation` `*1000` | Aug/06/2021 04:36 | 
-102 | [A - Little Pony and Expected Maximum](https://codeforces.com/contest/453/problem/A) | [GNU C++17](./codeforces/453/A.cpp) | `probabilities` `*1600` | Aug/05/2021 10:52 | 
-101 | [A - Classroom Watch](https://codeforces.com/contest/875/problem/A) | [GNU C++17](./codeforces/875/A.cpp) | `brute force` `math` `*1200` | Aug/02/2021 07:01 | 
-100 | [A - Vladik and flights](https://codeforces.com/contest/743/problem/A) | [GNU C++17](./codeforces/743/A.cpp) | `constructive algorithms` `greedy` `implementation` `*1200` | Aug/02/2021 06:45 | 
-99 | [C1 - Simple Polygon Embedding](https://codeforces.com/contest/1354/problem/C1) | [GNU C++17](./codeforces/1354/C1.cpp) | `binary search` `geometry` `math` `ternary search` `*1400` | Aug/02/2021 06:40 | 
+104 | [A - Mahmoud and Ehab and the MEX](https://codeforces.com/contest/862/problem/A) | [GNU C++17](./codeforces/862/A.cpp) | `greedy` `implementation` `*1000` | Aug/06/2021 04:36 | 
+103 | [A - Little Pony and Expected Maximum](https://codeforces.com/contest/453/problem/A) | [GNU C++17](./codeforces/453/A.cpp) | `probabilities` `*1600` | Aug/05/2021 10:52 | 
+102 | [A - Classroom Watch](https://codeforces.com/contest/875/problem/A) | [GNU C++17](./codeforces/875/A.cpp) | `brute force` `math` `*1200` | Aug/02/2021 07:01 | 
+101 | [A - Vladik and flights](https://codeforces.com/contest/743/problem/A) | [GNU C++17](./codeforces/743/A.cpp) | `constructive algorithms` `greedy` `implementation` `*1200` | Aug/02/2021 06:45 | 
+100 | [C1 - Simple Polygon Embedding](https://codeforces.com/contest/1354/problem/C1) | [GNU C++17](./codeforces/1354/C1.cpp) | `binary search` `geometry` `math` `ternary search` `*1400` | Aug/02/2021 06:40 | 
+99 | [C - Web of Lies](https://codeforces.com/contest/1549/problem/C) | [GNU C++17](./codeforces/1549/C.cpp) | `graphs` `greedy` `*1400` | Aug/02/2021 02:22 | 
 98 | [C - Little Alawn's Puzzle](https://codeforces.com/contest/1534/problem/C) | [GNU C++17](./codeforces/1534/C.cpp) | `combinatorics` `dp` `dsu` `graphs` `math` | Jun/17/2021 13:50 | 
 97 | [A - Colour the Flag](https://codeforces.com/contest/1534/problem/A) | [GNU C++17](./codeforces/1534/A.cpp) | `brute force` `implementation` | Jun/15/2021 08:22 | 
 96 | [B - Histogram Ugliness](https://codeforces.com/contest/1534/problem/B) | [GNU C++17](./codeforces/1534/B.cpp) | `greedy` `implementation` `math` | Jun/13/2021 22:09 | 
