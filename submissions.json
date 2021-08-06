@@ -1763,6 +1763,23 @@
     ],
     "timestamp": "Jun/17/2021 13:50"
   },
+  "CF125008271": {
+    "contest_id": 862,
+    "language": "GNU C++17",
+    "path": "codeforces/862/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Mahmoud and Ehab and the MEX",
+    "problem_url": "https://codeforces.com/contest/862/problem/A",
+    "submission_id": "CF125008271",
+    "submission_url": "https://codeforces.com/contest/862/submission/125008271",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Aug/06/2021 04:36"
+  },
   "CF99810667": {
     "contest_id": 677,
     "language": "GNU C++17",
